@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms><ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>DeskBox</AssemblyName>
+    <RootNamespace>DeskBox</RootNamespace>
+    <ApplicationHighDpiMode>DpiUnaware</ApplicationHighDpiMode>
+    <DebugType>none</DebugType>
+    <SatelliteResourceLanguages>zh-Hans</SatelliteResourceLanguages>
+    <NoWarn>CA1416;SYSLIB0001;CS0169;CS0414</NoWarn>
+    <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup><PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" /><Reference Include="System.Runtime.Serialization" /></ItemGroup>
+
+  <!-- _archive 里存的是历史产物/小工具，不参与本程序编译 -->
+  <ItemGroup>
+    <Compile Remove="_archive\**" />
+    <Compile Remove="dist\**" />
+  </ItemGroup>
+
+</Project>

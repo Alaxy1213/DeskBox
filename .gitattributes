@@ -1,0 +1,9 @@
+# 源码与 Windows 批处理都是 CRLF；保持一致，避免别人 checkout 后 .cmd 出问题
+*.cs      text eol=crlf
+*.csproj  text eol=crlf
+*.cmd     text eol=crlf
+*.txt     text eol=crlf
+*.py      text eol=lf
+*.md      text eol=lf
+*.json    text eol=lf
+*.yml     text eol=lf

@@ -1,0 +1,40 @@
+# 编译产物与分发包（发行包走 GitHub Release，不进源码树）
+bin/
+obj/
+dist/
+*.exe
+*.pdb
+*.dll
+*.zip
+
+# 本机运行数据：配置、图标实体文件、日志、体检/自测报告，绝不入库
+deskbox.json
+deskbox*.log
+items/
+health-report.txt
+*-report.txt
+*.bak
+
+# 测试截图、渲染对比图、历史归档（含本机桌面截图与个人路径）
+_archive/
+_preview/
+render/
+*.png
+*.jpg
+*.jpeg
+*.bmp
+
+# 本机诊断 / 配色自检脚本（含 G:\DeskBox 等本机绝对路径）
+_*.py
+opencheck.py
+palcheck.py
+make_card.py
+deskbox.color-new.json
+
+# 编辑器与系统
+.vs/
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini
+.workbuddy/
